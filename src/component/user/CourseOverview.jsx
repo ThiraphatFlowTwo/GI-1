@@ -28,6 +28,14 @@ const CourseOverview = () => {
       time: "09:00 AM - 11:00 AM",
       image: "https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
+    {
+      id: 4,
+      title: "หลักสูตร 3",
+      description: "การวิเคราะห์ข้อมูลผลิตภัณฑ์ Gi",
+      date: "10 เมษายน 2025",
+      time: "09:00 AM - 11:00 AM",
+      image: "https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
   ];
 
   return (

@@ -10,6 +10,9 @@ import Addcoures from "../page/Admin/Addcoures";
 import Couresuser from "../page/user/Couresuser";
 import Team from "../page/user/Team";
 import CourseDetailPage from "../page/user/CourseDetailPage"
+import ProductDeatil from "../page/user/ProductDeatil";
+import Addnewcategory from "../page/Admin/Addnewcategory";
+import MemberProfile from "../page/user/MemberProfile";
 
 // รวม Router สำหรับเปลี่ยนไปหน้าต่างๆ
 const router = createBrowserRouter([
@@ -22,9 +25,10 @@ const router = createBrowserRouter([
       { path: "coures", element: <Coures /> },
       { path: "addproduct", element: <Addproduct /> },
       { path: "addcoures", element: <Addcoures /> },
+      { path: "addcategory", element: <Addnewcategory /> },
     ],
   },
-  // router ฝั่ง user 
+  // router ฝั่ง user
   {
     path: "/",
     children: [
@@ -33,7 +37,15 @@ const router = createBrowserRouter([
       { path: "product", element: <Productinfo /> },
       { path: "coures", element: <Couresuser /> },
       { path: "team", element: <Team /> },
-      { path: "/coures/:id", element: <CourseDetailPage />}
+      { path: "/coures/:id", element: <CourseDetailPage />},
+
+
+      { path: "coures", element: <Couresuser/> },
+      { path: "team", element: <Team/> },
+      { path: "/product/:id", element: <ProductDeatil/> },
+      { path: "coures", element: <Couresuser /> },
+      { path: "team", element: <Team /> },
+      { path: "team/:id", element: <MemberProfile /> },
 
     ],
   },
